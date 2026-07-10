@@ -1,10 +1,11 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Yulong Ge
-  label: Graduate Student
-  email: geyvlong@stu.hit.edu.cn
+  headline: Graduate Student in Mathematics
   location: Harbin, China
-  image: assets/img/profile.png
-  summary: First-year graduate student at Harbin Institute of Technology, focusing on machine learning and neural network interpretability.
+  email: geyvlong@stu.hit.edu.cn
+  website: https://yulong-ge.github.io
+  photo: ../assets/img/profile.png
 
   social_networks:
     - network: GitHub
@@ -15,24 +16,24 @@ cv:
   sections:
     Education:
       - institution: Harbin Institute of Technology
+        area: Mathematics
+        degree: M.S. Student
         location: Harbin, China
-        area: School of Mathematics
-        studyType: Graduate Student
-        start_date: ""
-        end_date: present
         highlights:
           - Supervised by Professor Jianwei Ma.
           - Research areas include computer vision and machine learning.
 
       - institution: Harbin Institute of Technology
+        area: Mathematics
+        degree: B.S.
         location: Harbin, China
-        area: School of Mathematics
-        studyType: Bachelor's Degree
-        start_date: ""
-        end_date: ""
 
     Research Interests:
-      - name: Diffusion generative models
-        summary: Theory and applications of diffusion generative models.
-      - name: Neural network interpretability
-        summary: Theoretical analysis and empirical explanations for neural networks.
+      - bullet: Theory and applications of diffusion generative models
+      - bullet: Theoretical analysis and empirical explanations for neural network interpretability
+
+    Research Skills:
+      - label: Areas
+        details: Machine learning, computer vision, diffusion models, neural network interpretability
+      - label: Languages
+        details: Chinese (native), English

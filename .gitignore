@@ -1,4 +1,6 @@
 _site
+_drafts/
+assets/rendercv/rendercv_output/profile.png
 .bundle
 .DS_store
 .idea

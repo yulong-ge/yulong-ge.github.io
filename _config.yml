@@ -14,7 +14,7 @@ footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: machine learning, computer vision, diffusion models, neural network interpretability, academic website
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+lang: zh-CN # default language; individual English posts can set `lang: en`
 icon: site-logo.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://yulong-ge.github.io # the base hostname & protocol for your site
@@ -31,7 +31,7 @@ back_to_top: true # set to false to disable the back to top button
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
+  enabled: false
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
@@ -61,7 +61,7 @@ al_folio:
     cv:
       enabled: true
     distill:
-      enabled: true
+      enabled: false
   compat:
     bootstrap:
       enabled: false
@@ -83,7 +83,7 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
@@ -97,9 +97,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: /assets/img/og-image.png # 1200x630 site-wide social preview
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -121,8 +121,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Blog # blog_name will be displayed in your blog page
-blog_description: Research notes and technical writing
+blog_name: 博客 / Blog # blog_name will be displayed in your blog page
+blog_description: 中文为主的研究笔记与技术写作 / Research notes and technical writing
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -138,17 +138,17 @@ related_blog_posts:
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
   repo: yulong-ge/yulong-ge.github.io # <your-github-user-name>/<your-github-repo-name>
-  repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
-  category: Comments # name of the category under which discussions will be created
-  category_id: # leave empty or specify your category_id (see https://giscus.app/)
-  mapping: title # identify discussions by post title
+  repo_id: R_kgDOTUblag
+  category: Announcements
+  category_id: DIC_kwDOTUblas4DA6NN
+  mapping: pathname # keep discussions stable when a post title changes
   strict: 1 # use strict identification mode
   reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
   input_position: bottom # whether to display input form below (bottom) or above (top) the comments
   dark_theme: dark # name of the dark color scheme (preferred works well with al-folio dark mode)
   light_theme: light # name of the light color scheme (preferred works well with al-folio light mode)
   emit_metadata: 0
-  lang: en
+  lang: zh-CN
 
 # Disqus comments (DEPRECATED)
 disqus_shortname: # put your disqus shortname
@@ -223,23 +223,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
-  - _pages/books.md
-  - _pages/dropdown.md
-  - _pages/news.md
-  - _pages/plugins.md
-  - _pages/profiles.md
-  - _pages/projects.md
-  - _pages/teaching.md
-  - _posts/
-  - _projects/
-  - _news/
-  - _books/
-  - _teachings/
-  - assets/html/
-  - assets/pdf/
-  - assets/rendercv/rendercv_output/
-  - assets/jupyter/
   - purgecss.config.js
   - README.md
   - readme_preview/

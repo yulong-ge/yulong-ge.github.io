@@ -1,0 +1,38 @@
+cv:
+  name: Yulong Ge
+  label: Graduate Student
+  email: geyvlong@stu.hit.edu.cn
+  location: Harbin, China
+  image: assets/img/profile.png
+  summary: First-year graduate student at Harbin Institute of Technology, focusing on machine learning and neural network interpretability.
+
+  social_networks:
+    - network: GitHub
+      username: yulong-ge
+    - network: X
+      username: Halongbay_AI
+
+  sections:
+    Education:
+      - institution: Harbin Institute of Technology
+        location: Harbin, China
+        area: School of Mathematics
+        studyType: Graduate Student
+        start_date: ""
+        end_date: present
+        highlights:
+          - Supervised by Professor Jianwei Ma.
+          - Research areas include computer vision and machine learning.
+
+      - institution: Harbin Institute of Technology
+        location: Harbin, China
+        area: School of Mathematics
+        studyType: Bachelor's Degree
+        start_date: ""
+        end_date: ""
+
+    Research Interests:
+      - name: Diffusion generative models
+        summary: Theory and applications of diffusion generative models.
+      - name: Neural network interpretability
+        summary: Theoretical analysis and empirical explanations for neural networks.

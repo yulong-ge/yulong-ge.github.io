@@ -1,0 +1,11 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+email: geyvlong@stu.hit.edu.cn
+github_username: yulong-ge
+x_username: Halongbay_AI
+rss_icon: true
+zhihu:
+  logo: fa-brands fa-zhihu
+  title: Zhihu
+  url: https://www.zhihu.com/people/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C%E5%BE%97%E8%8F%A9%E6%8F%90

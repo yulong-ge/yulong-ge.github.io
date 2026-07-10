@@ -23,7 +23,7 @@
       {
         "network": "Zhihu",
         "username": "大千世界得菩提",
-        "url": "https://www.zhihu.com/people/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C%E5%BE%97%E8%8F%A9%E6%8F%90"
+        "url": "https://www.zhihu.com/people/da-qian-shi-jie-de-pu-ti"
       }
     ]
   },
@@ -48,11 +48,7 @@
   "interests": [
     {
       "name": "Machine Learning",
-      "keywords": [
-        "Computer Vision",
-        "Diffusion Generative Models",
-        "Neural Network Interpretability"
-      ]
+      "keywords": ["Computer Vision", "Diffusion Generative Models", "Neural Network Interpretability"]
     }
   ],
   "work": [],

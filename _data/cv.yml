@@ -1,11 +1,11 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Yulong Ge
-  headline: Graduate Student in Mathematics
+  headline: Ph.D. Student in Applied Mathematics
   location: Harbin, China
   email: geyvlong@stu.hit.edu.cn
   website: https://yulong-ge.github.io
-  photo: ../assets/img/profile.png
+  photo: ../assets/img/cv-profile.jpg
 
   social_networks:
     - network: GitHub
@@ -16,24 +16,69 @@ cv:
   sections:
     Education:
       - institution: Harbin Institute of Technology
-        area: Mathematics
-        degree: M.S. Student
+        area: Applied Mathematics
+        degree: Ph.D.
         location: Harbin, China
         highlights:
           - Supervised by Professor Jianwei Ma.
-          - Research areas include computer vision and machine learning.
+          - Research focuses on computer vision, generative models, and neural network interpretability.
 
       - institution: Harbin Institute of Technology
-        area: Mathematics
+        area: Information and Computing Science
         degree: B.S.
         location: Harbin, China
 
-    Research Interests:
-      - bullet: Theory and applications of diffusion generative models
-      - bullet: Theoretical analysis and empirical explanations for neural network interpretability
+      - institution: Harbin Institute of Technology
+        area: Big Data Management and Applications
+        degree: Minor
+        location: Harbin, China
 
-    Research Skills:
-      - label: Areas
-        details: Machine learning, computer vision, diffusion models, neural network interpretability
+    Research and Project Experience:
+      - name: Domain-Adaptive Deep Learning Feature Space Research
+        summary: Collaborative research on feature-space structure to improve deep-model robustness under distribution shifts.
+        highlights:
+          - Studied structural properties of model feature spaces for generalization to unseen domains.
+          - Related research outcome published in IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).
+
+      - name: Intelligent Identification and Analysis of Martian Geological Faults
+        summary: AI for Science project for identifying geological faults in Martian data.
+        highlights:
+          - Developed core components of an AI fault-recognition pipeline.
+          - Vectorized and standardized fault data for downstream analysis.
+
+      - name: Efficient Sampling Algorithms for Diffusion Generative Models
+        summary: Undergraduate thesis on improving the sampling efficiency of diffusion models.
+        highlights:
+          - Investigated and designed algorithms targeting a central efficiency challenge in diffusion-model sampling.
+
+      - name: Generative-Model-Based Ultrasound Medical Image Translation
+        summary: Cross-modal medical-image translation research using generative models.
+        highlights:
+          - Explored generation of diagnostically informative images to address limitations of single-modality ultrasound data.
+
+    Open Source:
+      - name: AI Feed Tracker
+        summary: AI-subscription service that summarizes time-sensitive updates close to real time.
+      - name: OpenChamber
+        summary: Open-source project contributor.
+
+    Technical Skills:
+      - label: Mathematics and Theory
+        details: Computational mathematics, applied mathematics, linear algebra, probability, statistical learning theory, variational inference
+      - label: Large Language Models
+        details: Foundations of LLM fine-tuning and practical LoRA fine-tuning
+      - label: Generative Modeling
+        details: Diffusion models for natural-image generation
+      - label: Embedded Systems
+        details: STM32 development and SolidWorks mechanical modeling
       - label: Languages
-        details: Chinese (native), English
+        details: Chinese (native); English (CET-6 579, CET-4 593)
+
+    Honors and Awards:
+      - label: Awards
+        details: People's Scholarship; Outstanding Youth League Member; Outstanding Student; Special Graduate Academic Scholarship
+
+    Volunteer Experience:
+      - name: Computer 110 Club
+        date: 2020-2022
+        summary: Supported on-campus computer diagnostics and wrote new-semester purchasing guides for students.

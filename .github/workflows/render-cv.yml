@@ -39,8 +39,14 @@ jobs:
             echo "Missing RenderCV config file!"
             exit 1
           fi
-          uvx --from "rendercv[full]==2.8" rendercv render $cv_file --settings $settings
-          rm -f assets/rendercv/rendercv_output/*.typ assets/rendercv/rendercv_output/profile.png
+          design=$(find $rendercv_dir -maxdepth 1 -type f \( -name "design.yaml" -o -name "design.yml" \))
+          locale=$(find $rendercv_dir -maxdepth 1 -type f \( -name "locale.yaml" -o -name "locale.yml" \))
+          if [ -z "$design" ] || [ -z "$locale" ]; then
+            echo "Missing RenderCV design or locale file!"
+            exit 1
+          fi
+          uvx --from "rendercv[full]==2.8" rendercv render "$cv_file" --design "$design" --locale-catalog "$locale" --settings "$settings"
+          find assets/rendercv/rendercv_output -maxdepth 1 -type f \( -name '*.typ' -o -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' \) -delete
       - name: Upload rendercv_output as an artifact
         uses: actions/upload-artifact@v4
         with:

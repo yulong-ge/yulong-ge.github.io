@@ -33,7 +33,7 @@ cv:
         degree: Minor
         location: Harbin, China
 
-    Research and Project Experience:
+    Projects:
       - name: Domain-Adaptive Deep Learning Feature Space Research
         summary: Collaborative research on feature-space structure to improve deep-model robustness under distribution shifts.
         highlights:
@@ -56,7 +56,7 @@ cv:
         highlights:
           - Explored generation of diagnostically informative images to address limitations of single-modality ultrasound data.
 
-    Open Source:
+    Open Source Projects:
       - name: AI Feed Tracker
         summary: AI-subscription service that summarizes time-sensitive updates close to real time.
       - name: OpenChamber
@@ -74,11 +74,8 @@ cv:
       - label: Languages
         details: Chinese (native); English (CET-6 579, CET-4 593)
 
-    Honors and Awards:
-      - label: Awards
-        details: People's Scholarship; Outstanding Youth League Member; Outstanding Student; Special Graduate Academic Scholarship
+    Selected Honors:
+      - bullet: People's Scholarship; Outstanding Youth League Member; Outstanding Student; Special Graduate Academic Scholarship
 
     Volunteer Experience:
-      - name: Computer 110 Club
-        date: 2020-2022
-        summary: Supported on-campus computer diagnostics and wrote new-semester purchasing guides for students.
+      - bullet: "**Computer 110 Club (2020-2022):** Supported on-campus computer diagnostics and wrote new-semester purchasing guides for students."

@@ -33,12 +33,29 @@ cv:
         degree: Minor
         location: Harbin, China
 
+    Publications:
+      - title: "Feature-Space Planes Searcher: A Universal Domain Adaptation Framework for Interpretability and Computational Efficiency"
+        authors:
+          - Zhitong Cheng
+          - Yiran Jiang
+          - Yulong Ge
+          - Yufeng Li
+          - Zhongheng Qin
+          - Rongzhi Lin
+          - Jianwei Ma
+        publisher: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Early Access
+        date: 2026-06-16
+        url: https://ieeexplore.ieee.org/abstract/document/11568428
+        doi: 10.1109/TPAMI.2026.3703974
+        summary: Feature-space unsupervised domain adaptation with frozen encoders, decision-boundary adaptation, and efficient full-dataset optimization.
+
     Projects:
-      - name: Domain-Adaptive Deep Learning Feature Space Research
-        summary: Collaborative research on feature-space structure to improve deep-model robustness under distribution shifts.
+      - name: Feature-Space Planes Searcher (FPS) for Unsupervised Domain Adaptation
+        url: https://github.com/baogegeJiang/FPS
+        summary: Feature-space unsupervised domain adaptation framework that keeps pretrained encoders frozen and adapts decision boundaries using reusable H5 feature banks.
         highlights:
-          - Studied structural properties of model feature spaces for generalization to unseen domains.
-          - Related research outcome published in IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).
+          - Public PyTorch implementation for efficient and interpretable feature-space domain adaptation.
+          - Related work published in IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Early Access, 2026.
 
       - name: Intelligent Identification and Analysis of Martian Geological Faults
         summary: AI for Science project for identifying geological faults in Martian data.
@@ -55,12 +72,6 @@ cv:
         summary: Cross-modal medical-image translation research using generative models.
         highlights:
           - Explored generation of diagnostically informative images to address limitations of single-modality ultrasound data.
-
-    Open Source Projects:
-      - name: AI Feed Tracker
-        summary: AI-subscription service that summarizes time-sensitive updates close to real time.
-      - name: OpenChamber
-        summary: Open-source project contributor.
 
     Technical Skills:
       - label: Mathematics and Theory

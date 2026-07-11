@@ -39,6 +39,18 @@ bundle exec jekyll serve --drafts
 
 Move a finished draft to `_posts/YYYY-MM-DD-slug.md` before committing it.
 
+## Write in Obsidian
+
+Open this repository as a separate Obsidian vault. It is intentionally separate
+from the main notes vault: new notes are created in `_drafts/`, attachments go
+to `assets/img/`, and both the local Obsidian configuration and drafts are
+ignored by Git.
+
+Use the `Blog Post` template from the Templates command to create a draft.
+When the article is ready, rename and move it to `_posts/YYYY-MM-DD-slug.md`,
+then use `Obsidian Git: Commit-and-sync` to publish it. Automatic commit,
+pull, and push are disabled, so publishing always remains an explicit action.
+
 ## RSS
 
 Published posts are included automatically in `/feed.xml`. Drafts and ordinary

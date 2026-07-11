@@ -1,5 +1,6 @@
 _site
 _drafts/
+/.obsidian/
 assets/rendercv/rendercv_output/*.jpg
 assets/rendercv/rendercv_output/*.jpeg
 assets/rendercv/rendercv_output/*.png

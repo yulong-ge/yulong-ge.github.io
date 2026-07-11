@@ -39,10 +39,20 @@
 } /* Literal.Number */
 .highlight .s {
   color: #ed9d13;
-} /* Literal.String */ /* Name.Attribute */ /* Name.Builtin */ /* Name.Class */
+} /* Literal.String */
+.highlight .na {
+  color: #bbbbbb;
+} /* Name.Attribute */ /* Name.Builtin */
+.highlight .nc {
+  color: #447fcf;
+  text-decoration: underline;
+} /* Name.Class */
 .highlight .no {
   color: #40ffff;
-} /* Name.Constant */ /* Name.Decorator */ /* Name.Entity */ /* Name.Exception */ /* Name.Function */ /* Name.Label */ /* Name.Namespace */ /* Name.Other */
+} /* Name.Constant */ /* Name.Decorator */ /* Name.Entity */ /* Name.Exception */ /* Name.Function */
+.highlight .nl {
+  color: #d0d0d0;
+} /* Name.Label */ /* Name.Namespace */ /* Name.Other */
 .highlight .py {
   color: #d0d0d0;
 } /* Name.Property */

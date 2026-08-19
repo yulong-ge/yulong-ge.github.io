@@ -2,9 +2,30 @@
 
 ## Publish a post
 
-Create a Markdown file in `_posts/` named `YYYY-MM-DD-slug.md`.
+The standard path is the converter script, which automates frontmatter
+mapping, H1 stripping, citation linking, prettier, push and CI polling:
 
-Chinese-first post front matter:
+```bash
+# dry-run: writes _posts/<date>-<slug>.md, formats it, no git actions
+bin/publish_obsidian_note.py --source <vault-note.md> --slug <url-slug>
+
+# for real: add --push (commits, pushes, waits for the Deploy site Action)
+bin/publish_obsidian_note.py --source <vault-note.md> --slug <url-slug> --push
+
+# re-apply citation linking to an existing post (idempotent)
+bin/publish_obsidian_note.py --relink _posts/<post>.md [--push]
+```
+
+The script maps the vault note automatically: `time` → post `date`,
+block-list `tags` → post `tags`, first `# ` heading → `title` (H1 is
+stripped), first paragraph → `description`. Body `[N]` citations become
+links that jump to the reference list, reference entries get
+`<a id="ref-N">` anchors, and bare URLs in references are wrapped with
+`<...>`. Override any of it with `--date`, `--desc`, `--tags`,
+`--categories`. A vault note named `发布-*.md` in the main vault is the
+usual input; wikilinks trigger a warning (they do not render here).
+
+The resulting front matter (also what the script emits):
 
 ```yaml
 ---

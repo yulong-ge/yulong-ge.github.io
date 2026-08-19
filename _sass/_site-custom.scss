@@ -1,0 +1,71 @@
+/*******************************************************************************
+ * Site-specific style overrides (loaded last via assets/css/main.scss).
+ *
+ * What this fixes (2026-08): all markdown headings rendered in the same pure
+ * black as body text at Tailwind's oversized 2rem/1.75rem with weight 300 —
+ * no visual hierarchy and a dense reading feel.
+ *
+ * Design notes:
+ * - Colors reuse theme tokens so light/dark palettes keep working: light mode
+ *   is purple (--global-theme-color), dark mode flips to cyan automatically.
+ * - h3/h4 blend the theme color with the text color via color-mix, giving a
+ *   gentle hierarchy instead of introducing hardcoded extra hues. Browsers
+ *   without color-mix simply fall back to the inherited text color.
+ * - Sizes are scaled down toward the body text (body is 1rem); weights go up
+ *   from 300 to 600 to compensate, which reads better for CJK headings.
+ ******************************************************************************/
+
+h2 {
+  color: var(--global-theme-color);
+  font-size: 1.45rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-top: 2.2rem;
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+h3 {
+  color: color-mix(in oklab, var(--global-theme-color) 45%, var(--global-text-color));
+  font-size: 1.22rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-top: 1.8rem;
+  margin-bottom: 0.7rem;
+}
+
+h4 {
+  color: color-mix(in oklab, var(--global-theme-color) 25%, var(--global-text-color));
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+h5,
+h6 {
+  font-weight: 600;
+  margin-top: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* The gem's bibliography header (right-aligned, grey, border-top) must not
+   pick up the accent underline; h2.category keeps its own border-bottom. */
+h2.bibliography {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Long-form reading comfort: slightly more air for paragraphs and list items
+   inside blog posts (CJK text benefits from taller line height). */
+.post-content {
+  p {
+    line-height: 1.85;
+  }
+
+  li {
+    line-height: 1.75;
+  }
+}

@@ -81,7 +81,7 @@ giscus_comments: true
 
 ## 参考文献
 
-[1] Weng, Lilian. "Harness Engineering for Self-Improvement." *Lil'Log*, July 4, 2026. <https://lilianweng.github.io/posts/2026-07-04-harness/>
+[1] Weng, Lilian. "Harness Engineering for Self-Improvement." _Lil'Log_, July 4, 2026. <https://lilianweng.github.io/posts/2026-07-04-harness/>
 
 [2] Zhang, Qizheng, et al. "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models." ICLR 2026. arXiv:2510.04618. <https://arxiv.org/abs/2510.04618>
 
@@ -99,7 +99,7 @@ giscus_comments: true
 
 [9] Zechner, Mario. "What I learned building an opinionated and minimal coding agent." November 30, 2025. <https://mariozechner.at/posts/2025-11-30-pi-coding-agent/>
 
-[10] Lu, Chris, et al. "Towards end-to-end automation of AI research." *Nature*, 651:914–919, 2026. <https://www.nature.com/articles/s41586-026-10265-5>
+[10] Lu, Chris, et al. "Towards end-to-end automation of AI research." _Nature_, 651:914–919, 2026. <https://www.nature.com/articles/s41586-026-10265-5>
 
 [11] Karpathy, Andrej. "autoresearch: AI agents running research on single-GPU nanochat training automatically." GitHub. <https://github.com/karpathy/autoresearch>
 
@@ -113,13 +113,13 @@ giscus_comments: true
 
 [16] Hebbar, Prannay, et al. "SIA: Self Improving AI with Harness & Weight Updates." arXiv:2605.27276, 2026. <https://arxiv.org/abs/2605.27276>
 
-[17] DeepSeek-AI. "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning." *Nature*, 645:633–638, 2025. arXiv:2501.12948. <https://arxiv.org/abs/2501.12948>
+[17] DeepSeek-AI. "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning." _Nature_, 645:633–638, 2025. arXiv:2501.12948. <https://arxiv.org/abs/2501.12948>
 
-[18] Weng, Lilian. "Exploration Strategies in Deep Reinforcement Learning." *Lil'Log*, June 7, 2020. <https://lilianweng.github.io/posts/2020-06-07-exploration-drl/>
+[18] Weng, Lilian. "Exploration Strategies in Deep Reinforcement Learning." _Lil'Log_, June 7, 2020. <https://lilianweng.github.io/posts/2020-06-07-exploration-drl/>
 
-[19] Goodhart, Charles A. E. "Problems of Monetary Management: The U.K. Experience." In *Papers in Monetary Economics*, Reserve Bank of Australia, 1975；通行表述 "When a measure becomes a target, it ceases to be a good measure" 归于 Strathern, Marilyn. "'Improving ratings': audit in the British University system." *European Review*, 5(3):305–321, 1997. 参见 <https://en.wikipedia.org/wiki/Goodhart%27s_law>
+[19] Goodhart, Charles A. E. "Problems of Monetary Management: The U.K. Experience." In _Papers in Monetary Economics_, Reserve Bank of Australia, 1975；通行表述 "When a measure becomes a target, it ceases to be a good measure" 归于 Strathern, Marilyn. "'Improving ratings': audit in the British University system." _European Review_, 5(3):305–321, 1997. 参见 <https://en.wikipedia.org/wiki/Goodhart%27s_law>
 
-[20] Weng, Lilian. "Reward Hacking in Reinforcement Learning." *Lil'Log*, November 28, 2024. <https://lilianweng.github.io/posts/2024-11-28-reward-hacking/>
+[20] Weng, Lilian. "Reward Hacking in Reinforcement Learning." _Lil'Log_, November 28, 2024. <https://lilianweng.github.io/posts/2024-11-28-reward-hacking/>
 
 ---
 

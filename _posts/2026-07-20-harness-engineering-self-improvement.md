@@ -79,45 +79,49 @@ giscus_comments: true
 
 ---
 
-<a id="ref-1"></a>[\[1\]](#ref-1) Weng, Lilian. "Harness Engineering for Self-Improvement." _Lil'Log_, July 4, 2026. <https://lilianweng.github.io/posts/2026-07-04-harness/>
+## 参考文献
 
-<a id="ref-2"></a>[\[2\]](#ref-2) Zhang, Qizheng, et al. "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models." ICLR 2026. arXiv:2510.04618. <https://arxiv.org/abs/2510.04618>
+<a id="ref-1"></a>[1] Weng, Lilian. "Harness Engineering for Self-Improvement." _Lil'Log_, July 4, 2026. <https://lilianweng.github.io/posts/2026-07-04-harness/>
 
-<a id="ref-3"></a>[\[3\]](#ref-3) Ye, Haoran, et al. "Meta Context Engineering via Agentic Skill Evolution." arXiv:2601.21557, 2026. <https://arxiv.org/abs/2601.21557>
+<a id="ref-2"></a>[2] Zhang, Qizheng, et al. "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models." ICLR 2026. arXiv:2510.04618. <https://arxiv.org/abs/2510.04618>
 
-<a id="ref-4"></a>[\[4\]](#ref-4) Lee, Yoonho, et al. "Meta-Harness: End-to-End Optimization of Model Harnesses." arXiv:2603.28052, 2026. <https://arxiv.org/abs/2603.28052>
+<a id="ref-3"></a>[3] Ye, Haoran, et al. "Meta Context Engineering via Agentic Skill Evolution." arXiv:2601.21557, 2026. <https://arxiv.org/abs/2601.21557>
 
-<a id="ref-5"></a>[\[5\]](#ref-5) Zelikman, Eric, et al. "Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation." COLM 2024. arXiv:2310.02304. <https://arxiv.org/abs/2310.02304>
+<a id="ref-4"></a>[4] Lee, Yoonho, et al. "Meta-Harness: End-to-End Optimization of Model Harnesses." arXiv:2603.28052, 2026. <https://arxiv.org/abs/2603.28052>
 
-<a id="ref-6"></a>[\[6\]](#ref-6) Zhang, Hangfan, et al. "Self-Harness: Harnesses That Improve Themselves." arXiv:2606.09498, 2026. <https://arxiv.org/abs/2606.09498>
+<a id="ref-5"></a>[5] Zelikman, Eric, et al. "Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation." COLM 2024. arXiv:2310.02304. <https://arxiv.org/abs/2310.02304>
 
-<a id="ref-7"></a>[\[7\]](#ref-7) Zhang, Jenny, et al. "Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents." arXiv:2505.22954, 2025. <https://arxiv.org/abs/2505.22954>
+<a id="ref-6"></a>[6] Zhang, Hangfan, et al. "Self-Harness: Harnesses That Improve Themselves." arXiv:2606.09498, 2026. <https://arxiv.org/abs/2606.09498>
 
-<a id="ref-8"></a>[\[8\]](#ref-8) Pi Coding Agent 官网. <https://pi.dev/>
+<a id="ref-7"></a>[7] Zhang, Jenny, et al. "Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents." arXiv:2505.22954, 2025. <https://arxiv.org/abs/2505.22954>
 
-<a id="ref-9"></a>[\[9\]](#ref-9) Zechner, Mario. "What I learned building an opinionated and minimal coding agent." November 30, 2025. <https://mariozechner.at/posts/2025-11-30-pi-coding-agent/>
+<a id="ref-8"></a>[8] Pi Coding Agent 官网. <https://pi.dev/>
 
-<a id="ref-10"></a>[\[10\]](#ref-10) Lu, Chris, et al. "Towards end-to-end automation of AI research." _Nature_, 651:914–919, 2026. <https://www.nature.com/articles/s41586-026-10265-5>
+<a id="ref-9"></a>[9] Zechner, Mario. "What I learned building an opinionated and minimal coding agent." November 30, 2025. <https://mariozechner.at/posts/2025-11-30-pi-coding-agent/>
 
-<a id="ref-11"></a>[\[11\]](#ref-11) Karpathy, Andrej. "autoresearch: AI agents running research on single-GPU nanochat training automatically." GitHub. <https://github.com/karpathy/autoresearch>
+<a id="ref-10"></a>[10] Lu, Chris, et al. "Towards end-to-end automation of AI research." _Nature_, 651:914–919, 2026. <https://www.nature.com/articles/s41586-026-10265-5>
 
-<a id="ref-12"></a>[\[12\]](#ref-12) Kulikov, Ilia, et al. "Autodata: An agentic data scientist to create high quality synthetic data." arXiv:2606.25996, 2026. <https://arxiv.org/abs/2606.25996>
+<a id="ref-11"></a>[11] Karpathy, Andrej. "autoresearch: AI agents running research on single-GPU nanochat training automatically." GitHub. <https://github.com/karpathy/autoresearch>
 
-<a id="ref-13"></a>[\[13\]](#ref-13) Hu, Shengran, Cong Lu, and Jeff Clune. "Automated Design of Agentic Systems." ICLR 2025. arXiv:2408.08435. <https://arxiv.org/abs/2408.08435>
+<a id="ref-12"></a>[12] Kulikov, Ilia, et al. "Autodata: An agentic data scientist to create high quality synthetic data." arXiv:2606.25996, 2026. <https://arxiv.org/abs/2606.25996>
 
-<a id="ref-14"></a>[\[14\]](#ref-14) Zhang, Jiayi, et al. "AFlow: Automating Agentic Workflow Generation." ICLR 2025. arXiv:2410.10762. <https://arxiv.org/abs/2410.10762>
+<a id="ref-13"></a>[13] Hu, Shengran, Cong Lu, and Jeff Clune. "Automated Design of Agentic Systems." ICLR 2025. arXiv:2408.08435. <https://arxiv.org/abs/2408.08435>
 
-<a id="ref-15"></a>[\[15\]](#ref-15) Bolin, Michael. "Unrolling the Codex agent loop." OpenAI, January 23, 2026. <https://openai.com/index/unrolling-the-codex-agent-loop/>
+<a id="ref-14"></a>[14] Zhang, Jiayi, et al. "AFlow: Automating Agentic Workflow Generation." ICLR 2025. arXiv:2410.10762. <https://arxiv.org/abs/2410.10762>
 
-<a id="ref-16"></a>[\[16\]](#ref-16) Hebbar, Prannay, et al. "SIA: Self Improving AI with Harness & Weight Updates." arXiv:2605.27276, 2026. <https://arxiv.org/abs/2605.27276>
+<a id="ref-15"></a>[15] Bolin, Michael. "Unrolling the Codex agent loop." OpenAI, January 23, 2026. <https://openai.com/index/unrolling-the-codex-agent-loop/>
 
-<a id="ref-17"></a>[\[17\]](#ref-17) DeepSeek-AI. "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning." _Nature_, 645:633–638, 2025. arXiv:2501.12948. <https://arxiv.org/abs/2501.12948>
+<a id="ref-16"></a>[16] Hebbar, Prannay, et al. "SIA: Self Improving AI with Harness & Weight Updates." arXiv:2605.27276, 2026. <https://arxiv.org/abs/2605.27276>
 
-<a id="ref-18"></a>[\[18\]](#ref-18) Weng, Lilian. "Exploration Strategies in Deep Reinforcement Learning." _Lil'Log_, June 7, 2020. <https://lilianweng.github.io/posts/2020-06-07-exploration-drl/>
+<a id="ref-17"></a>[17] DeepSeek-AI. "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning." _Nature_, 645:633–638, 2025. arXiv:2501.12948. <https://arxiv.org/abs/2501.12948>
 
-<a id="ref-19"></a>[\[19\]](#ref-19) Goodhart, Charles A. E. "Problems of Monetary Management: The U.K. Experience." In _Papers in Monetary Economics_, Reserve Bank of Australia, 1975；通行表述 "When a measure becomes a target, it ceases to be a good measure" 归于 Strathern, Marilyn. "'Improving ratings': audit in the British University system." _European Review_, 5(3):305–321, 1997. 参见 <https://en.wikipedia.org/wiki/Goodhart%27s_law>
+<a id="ref-18"></a>[18] Weng, Lilian. "Exploration Strategies in Deep Reinforcement Learning." _Lil'Log_, June 7, 2020. <https://lilianweng.github.io/posts/2020-06-07-exploration-drl/>
 
-## <a id="ref-20"></a>[\[20\]](#ref-20) Weng, Lilian. "Reward Hacking in Reinforcement Learning." _Lil'Log_, November 28, 2024. <https://lilianweng.github.io/posts/2024-11-28-reward-hacking/>
+<a id="ref-19"></a>[19] Goodhart, Charles A. E. "Problems of Monetary Management: The U.K. Experience." In _Papers in Monetary Economics_, Reserve Bank of Australia, 1975；通行表述 "When a measure becomes a target, it ceases to be a good measure" 归于 Strathern, Marilyn. "'Improving ratings': audit in the British University system." _European Review_, 5(3):305–321, 1997. 参见 <https://en.wikipedia.org/wiki/Goodhart%27s_law>
+
+<a id="ref-20"></a>[20] Weng, Lilian. "Reward Hacking in Reinforcement Learning." _Lil'Log_, November 28, 2024. <https://lilianweng.github.io/posts/2024-11-28-reward-hacking/>
+
+---
 
 ## 附录：原文 Challenges
 

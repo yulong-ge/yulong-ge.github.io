@@ -125,62 +125,65 @@ def first_paragraph(body: str, limit: int = 160) -> str:
     return ""
 
 
-def split_refs_section(text: str) -> tuple[str, list[str], str]:
-    """Split into (before, ref_lines, after) around the 参考文献 heading."""
-    m = re.search(r"^#{2,6}\s*(参考文献|References|references)\s*$", text, re.M)
-    if not m:
-        return text, [], ""
-    after_start = len(text)
-    for stop in re.finditer(r"^(?:#{1,6} .*|---+)\s*$", text[m.end() :], re.M):
-        after_start = m.end() + stop.start()
-        break
-    before = text[: m.start()]
-    refs = text[m.end() :after_start].splitlines()
-    after = text[after_start:]
-    return before, refs, after
+def find_refs_range(lines: list[str]) -> tuple[int, int, int] | None:
+    """Line-based: (heading_idx, first_ref_idx, stop_idx). stop is the first
+    heading/hr line after the reference list (e.g. '---' or '## 附录')."""
+    h = None
+    for i, line in enumerate(lines):
+        if re.match(r"^#{2,6}\s*(参考文献|References|references)\s*$", line):
+            h = i
+            break
+    if h is None:
+        return None
+    stop = len(lines)
+    for i in range(h + 1, len(lines)):
+        if re.match(r"^(?:#{1,6} .*|---+)\s*$", lines[i]):
+            stop = i
+            break
+    return h, h + 1, stop
 
 
 def link_citations(text: str) -> str:
-    """Body [N] -> jump links; reference entries get anchors. Idempotent."""
-    before, refs, after = split_refs_section(text)
+    """Body [N] -> jump links; reference entries get anchors. Idempotent.
+    Line-based so the heading and blank-line structure can never be lost."""
+    lines = text.split("\n")
+    rng = find_refs_range(lines)
+    body_end = len(lines) if rng is None else rng[0]
 
-    def body_line(line: str) -> str:
-        return re.sub(
-            r"\[(\d{1,2})\]",
-            lambda m: f"[\\[{m.group(1)}\\]](#ref-{m.group(1)})",
-            line,
-        )
-
-    lines, in_fence = [], False
-    for line in before.splitlines():
-        if line.strip().startswith("```"):
+    in_fence = False
+    for i in range(body_end):
+        if lines[i].lstrip().startswith("```"):
             in_fence = not in_fence
-            lines.append(line)
             continue
-        lines.append(line if in_fence else body_line(line))
-    before = "\n".join(lines)
-
-    out = []
-    for line in refs:
-        m = re.match(r"^\[(\d{1,2})\]\s", line)
-        if m and f'id="ref-{m.group(1)}"' not in line:
-            line = f'<a id="ref-{m.group(1)}"></a>{line}'
-        out.append(line)
-    return before + "\n".join(out) + after
+        if not in_fence:
+            lines[i] = re.sub(
+                r"\[(\d{1,2})\]",
+                lambda m: f"[\\[{m.group(1)}\\]](#ref-{m.group(1)})",
+                lines[i],
+            )
+    if rng is not None:
+        _, start, stop = rng
+        for i in range(start, stop):
+            m = re.match(r"^\[(\d{1,2})\]\s", lines[i])
+            if m and f'id="ref-{m.group(1)}"' not in lines[i]:
+                lines[i] = f'<a id="ref-{m.group(1)}"></a>' + lines[i]
+    return "\n".join(lines)
 
 
 def wrap_bare_urls_in_refs(text: str) -> str:
-    before, refs, after = split_refs_section(text)
-    out = []
-    for line in refs:
-        if re.match(r"^\[\d{1,2}\]\s", line):
-            line = re.sub(
+    lines = text.split("\n")
+    rng = find_refs_range(lines)
+    if rng is None:
+        return text
+    _, start, stop = rng
+    for i in range(start, stop):
+        if re.match(r"^\[\d{1,2}\]\s", lines[i]):
+            lines[i] = re.sub(
                 r"(?<![<(])(https?://[^\s<>()，。；、'\"]+)",
                 lambda m: "<" + m.group(1).rstrip(".,;") + ">",
-                line,
+                lines[i],
             )
-        out.append(line)
-    return before + "\n".join(out) + after
+    return "\n".join(lines)
 
 
 def check_no_wikilinks(body: str) -> None:
@@ -300,17 +303,18 @@ def cmd_relink(args) -> None:
     p = (REPO / args.relink) if not Path(args.relink).is_absolute() else Path(args.relink)
     if not p.is_file():
         die(f"post not found: {p}")
+    rel = str(p.resolve().relative_to(REPO)) if p.resolve().is_relative_to(REPO) else str(p)
     text = p.read_text(encoding="utf-8")
     new = wrap_bare_urls_in_refs(link_citations(text))
     if new != text:
         p.write_text(new, encoding="utf-8")
-        print(f"relinked {p.relative_to(REPO)}")
+        print(f"relinked {rel}")
     else:
         print("nothing to change")
     ensure_prettier()
-    run([str(PRETTIER), "--write", str(p.relative_to(REPO))])
+    run([str(PRETTIER), "--write", rel])
     if args.push:
-        sha = git_commit_push(p, f"style: link citations to references in {p.name}")
+        sha = git_commit_push(p if p.resolve().is_relative_to(REPO) else p, f"style: link citations to references in {p.name}")
         poll_deploy(sha)
 
 

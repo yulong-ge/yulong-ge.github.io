@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 cv:
   name: Yulong Ge
-  headline: Ph.D. Student in Applied Mathematics
-  location: Harbin, China
+  headline: Ph.D. Student in Applied Mathematics | AI for Science
+  location: Beijing / Harbin, China
   email: geyvlong@stu.hit.edu.cn
   website: https://yulong-ge.github.io
   photo: ../assets/img/cv-profile.jpg
@@ -12,16 +12,26 @@ cv:
       username: yulong-ge
     - network: X
       username: Halongbay_AI
+    - network: ResearchGate
+      username: Yulong-Ge-3
 
   sections:
+    CV Downloads:
+      - bullet: "[English PDF](https://yulong-ge.github.io/assets/rendercv/rendercv_output/Yulong_Ge_CV.pdf) | [中文 PDF](https://yulong-ge.github.io/assets/rendercv/rendercv_output/Yulong_Ge_CV_ZH.pdf)"
+
     Education:
       - institution: Harbin Institute of Technology
         area: Applied Mathematics
         degree: Ph.D.
         location: Harbin, China
         highlights:
+          - Ph.D. student at the School of Mathematics.
           - Supervised by Professor Jianwei Ma.
-          - Research focuses on computer vision, generative models, and neural network interpretability.
+          - Research focuses on computer vision, generative models, neural network interpretability, and AI for Science.
+
+      - institution: Zhongguancun Academy
+        area: Doctoral Joint Training
+        location: Beijing, China
 
       - institution: Harbin Institute of Technology
         area: Information and Computing Science
@@ -43,35 +53,11 @@ cv:
           - Zhongheng Qin
           - Rongzhi Lin
           - Jianwei Ma
-        publisher: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Early Access
+        journal: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Early Access
         date: 2026-06-16
         url: https://ieeexplore.ieee.org/abstract/document/11568428
         doi: 10.1109/TPAMI.2026.3703974
-        summary: Feature-space unsupervised domain adaptation with frozen encoders, decision-boundary adaptation, and efficient full-dataset optimization.
-
-    Projects:
-      - name: Feature-Space Planes Searcher (FPS) for Unsupervised Domain Adaptation
-        url: https://github.com/baogegeJiang/FPS
-        summary: Feature-space unsupervised domain adaptation framework that keeps pretrained encoders frozen and adapts decision boundaries using reusable H5 feature banks.
-        highlights:
-          - Public PyTorch implementation for efficient and interpretable feature-space domain adaptation.
-          - Related work published in IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Early Access, 2026.
-
-      - name: Intelligent Identification and Analysis of Martian Geological Faults
-        summary: AI for Science project for identifying geological faults in Martian data.
-        highlights:
-          - Developed core components of an AI fault-recognition pipeline.
-          - Vectorized and standardized fault data for downstream analysis.
-
-      - name: Efficient Sampling Algorithms for Diffusion Generative Models
-        summary: Undergraduate thesis on improving the sampling efficiency of diffusion models.
-        highlights:
-          - Investigated and designed algorithms targeting a central efficiency challenge in diffusion-model sampling.
-
-      - name: Generative-Model-Based Ultrasound Medical Image Translation
-        summary: Cross-modal medical-image translation research using generative models.
-        highlights:
-          - Explored generation of diagnostically informative images to address limitations of single-modality ultrasound data.
+        summary: Published in IEEE TPAMI. Feature-space unsupervised domain adaptation with frozen encoders, decision-boundary adaptation, and efficient full-dataset optimization.
 
     Technical Skills:
       - label: Mathematics and Theory
@@ -88,5 +74,42 @@ cv:
     Selected Honors:
       - bullet: People's Scholarship; Outstanding Youth League Member; Outstanding Student; Special Graduate Academic Scholarship
 
+    Projects:
+      - name: Feature-Space Planes Searcher (FPS) for Unsupervised Domain Adaptation
+        url: https://github.com/baogegeJiang/FPS
+        summary: Feature-space unsupervised domain adaptation framework that keeps pretrained encoders frozen and adapts decision boundaries using reusable H5 feature banks.
+        highlights:
+          - Public PyTorch implementation for efficient and interpretable feature-space domain adaptation.
+          - Related work published in IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Early Access, 2026.
+
+      - name: Martian Geological Fault Mapping
+        summary: Contributed to a collaborative project applying foundation models to Martian geological fault mapping.
+        highlights:
+          - Assisted with vectorization and standardization of geological fault data.
+          - Contributed to selected parts of the fault-mapping workflow.
+
+      - name: Efficient Sampling Algorithms for Diffusion Generative Models
+        summary: Undergraduate thesis on improving the sampling efficiency of diffusion models.
+        highlights:
+          - Investigated and designed algorithms targeting a central efficiency challenge in diffusion-model sampling.
+
+      - name: Generative-Model-Based Ultrasound Medical Image Translation
+        summary: Cross-modal medical-image translation research using generative models.
+        highlights:
+          - Explored generation of diagnostically informative images to address limitations of single-modality ultrasound data.
+
+    Open Source Projects:
+      - name: AI Feed Tracker
+        url: https://github.com/yulong-ge/AIFeedTracker
+        summary: AI subscription service that summarizes time-sensitive updates close to real time.
+        highlights:
+          - Developed the service and its push-based information workflow.
+
+      - name: Open-Source Contributions
+        summary: Contributor to community projects including OpenChamber.
+
     Volunteer Experience:
-      - bullet: "**Computer 110 Club (2020-2022):** Supported on-campus computer diagnostics and wrote new-semester purchasing guides for students."
+      - bullet: "**Computer 110 Club Lead (2020-2022):** Supported on-campus computer diagnostics and wrote new-semester computer-purchasing guides for students."
+
+    Personal Interests:
+      - bullet: Photography; fitness; basketball; badminton; table tennis; exploring and tinkering with technology products

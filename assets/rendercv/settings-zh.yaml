@@ -1,0 +1,17 @@
+# for more options, see https://docs.rendercv.com/user_guide/yaml_input_structure/settings/
+settings:
+  render_command:
+    # Paths must be relative to _data/cv_zh.yml
+    design: ../assets/rendercv/design.yaml
+    locale: ../assets/rendercv/locale-zh.yaml
+    typst_path: ../assets/rendercv/rendercv_output/Yulong_Ge_CV_ZH.typ
+    pdf_path: ../assets/rendercv/rendercv_output/Yulong_Ge_CV_ZH.pdf
+    markdown_path: ../assets/rendercv/rendercv_output/Yulong_Ge_CV_ZH.md
+    html_path: ../assets/rendercv/rendercv_output/Yulong_Ge_CV_ZH.html
+    png_path: ../assets/rendercv/rendercv_output/Yulong_Ge_CV_ZH.png
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: true
+  bold_keywords: []

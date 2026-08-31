@@ -69,3 +69,52 @@ h2.bibliography {
     line-height: 1.75;
   }
 }
+
+/* Keep long navigation lists scrollable without the heavy native scrollbars
+   overpowering the compact sidebar and command palette. */
+#toc-sidebar,
+ninja-keys::part(actions-list) {
+  scrollbar-color: color-mix(in srgb, var(--global-text-color-light) 45%, transparent) transparent;
+  scrollbar-width: thin;
+}
+
+#toc-sidebar {
+  scrollbar-gutter: stable;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--global-text-color-light) 45%, transparent);
+    border: 1px solid transparent;
+    border-radius: 999px;
+    background-clip: padding-box;
+  }
+}
+
+ninja-keys::part(actions-list) {
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+ninja-keys::part(actions-list)::-webkit-scrollbar {
+  width: 6px;
+  height: 0;
+}
+
+ninja-keys::part(actions-list)::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+ninja-keys::part(actions-list)::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--global-text-color-light) 45%, transparent);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}

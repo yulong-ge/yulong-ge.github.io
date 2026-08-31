@@ -1,0 +1,114 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: 葛煜龙
+  location: 北京 / 哈尔滨
+  email: geyvlong@stu.hit.edu.cn
+  website: https://yulong-ge.github.io
+  photo: ../assets/img/cv-profile.jpg
+
+  social_networks:
+    - network: GitHub
+      username: yulong-ge
+    - network: X
+      username: Halongbay_AI
+    - network: ResearchGate
+      username: Yulong-Ge-3
+
+  sections:
+    简历下载:
+      - bullet: "[English PDF](https://yulong-ge.github.io/assets/rendercv/rendercv_output/Yulong_Ge_CV.pdf) | [中文 PDF](https://yulong-ge.github.io/assets/rendercv/rendercv_output/Yulong_Ge_CV_ZH.pdf)"
+
+    教育经历:
+      - institution: 哈尔滨工业大学
+        area: 应用数学
+        degree: 博士
+        location: 哈尔滨
+        highlights:
+          - 数学学院博士研究生。
+          - 导师：马坚伟教授。
+          - 研究方向包括计算机视觉、生成模型、神经网络可解释性与 AI for Science。
+
+      - institution: 北京中关村学院
+        area: 博士联合培养
+        location: 北京
+
+      - institution: 哈尔滨工业大学
+        area: 信息与计算科学
+        degree: 本科
+        location: 哈尔滨
+
+      - institution: 哈尔滨工业大学
+        area: 大数据管理与应用
+        degree: 辅修
+        location: 哈尔滨
+
+    论文:
+      - title: "Feature-Space Planes Searcher: A Universal Domain Adaptation Framework for Interpretability and Computational Efficiency"
+        authors:
+          - Zhitong Cheng
+          - Yiran Jiang
+          - Yulong Ge
+          - Yufeng Li
+          - Zhongheng Qin
+          - Rongzhi Lin
+          - Jianwei Ma
+        journal: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Early Access
+        date: 2026 年 6 月
+        url: https://ieeexplore.ieee.org/abstract/document/11568428
+        doi: 10.1109/TPAMI.2026.3703974
+        summary: 已发表于 IEEE TPAMI。该工作在冻结编码器的特征空间中开展无监督领域自适应，通过调整决策边界实现高效的全数据集优化。
+
+    技能:
+      - label: 数学与理论基础
+        details: 计算数学、应用数学、线性代数、概率论、统计学习理论、变分推断
+      - label: 大语言模型
+        details: 了解基础 LLM 微调，具备 LoRA 微调实践经验
+      - label: 深度图像生成
+        details: 对扩散模型自然图像生成有较为深入的研究
+      - label: 嵌入式系统
+        details: STM32 开发与 SolidWorks 机械结构建模
+      - label: 语言
+        details: 中文（母语）；英语（大学英语六级 579 分、四级 593 分）
+
+    主要荣誉:
+      - bullet: 人民奖学金；优秀团员；优秀学生；特等研究生学业奖学金
+
+    科研与项目经历:
+      - name: Feature-Space Planes Searcher (FPS) 领域自适应研究
+        url: https://github.com/baogegeJiang/FPS
+        summary: 在冻结预训练编码器的条件下，利用可复用的 H5 特征库调整决策边界，实现高效且可解释的特征空间领域自适应。
+        highlights:
+          - 提供公开的 PyTorch 实现。
+          - 相关成果已发表于 IEEE TPAMI Early Access，2026。
+
+      - name: 火星地质断层制图
+        summary: 参与使用基础模型开展火星地质断层识别与制图的合作项目。
+        highlights:
+          - 协助断层数据的矢量化与标准化处理。
+          - 参与断层制图流程中的部分工作。
+
+      - name: 扩散生成模型的高效采样算法研究
+        summary: 本科毕业设计，围绕扩散模型采样效率开展算法研究。
+        highlights:
+          - 探索并设计提升扩散模型采样效率的算法。
+
+      - name: 基于生成模型的超声医学图像翻译
+        summary: 使用生成模型开展跨模态医学图像翻译研究。
+        highlights:
+          - 探索生成更具诊断价值的影像信息，以缓解单一模态超声图像信息不足的问题。
+
+    开源项目经历:
+      - name: AI Feed Tracker
+        url: https://github.com/yulong-ge/AIFeedTracker
+        summary: 面向时效性信息的 AI 订阅服务，可近实时总结并推送动态。
+        highlights:
+          - 负责服务及其推送式信息工作流的开发。
+
+      - name: 开源社区贡献
+        summary: 参与 OpenChamber 等开源项目。
+
+    志愿活动:
+      - bullet: "**电脑 110 俱乐部部长（2020-2022）：** 参与校内师生电脑义诊及新学期购机指南编写。"
+
+    业余爱好:
+      - bullet: 摄影；健身；篮球；羽毛球；乒乓球；折腾各类科技产品

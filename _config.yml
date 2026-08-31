@@ -9,11 +9,11 @@ last_name: Ge
 contact_note: >
   The best way to reach me is by email.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  First-year graduate student at Harbin Institute of Technology, focusing on machine learning and neural network interpretability.
+  Ph.D. student in applied mathematics at Harbin Institute of Technology, jointly trained at Zhongguancun Academy, focusing on computer vision, generative models, and AI for Science.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: machine learning, computer vision, diffusion models, neural network interpretability, academic website
+keywords: machine learning, computer vision, diffusion models, neural network interpretability, AI for Science, planetary geology, academic website
 lang: zh-CN # default language; individual English posts can set `lang: en`
 icon: site-logo.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

@@ -445,7 +445,7 @@ kbd {
   white-space: pre-wrap;
 }
 
-.well code,
+
 code {
   font-family: monospace, monospace;
   font-size: 11pt !important;
@@ -516,16 +516,6 @@ hr {
 .toc {
   color: #1c1c1c !important;
   font-size: 11pt !important;
-}
-
-
-.well {
-  background-color: #e4e4e4;
-  border: 1px solid #e4e4e4;
-  color: #303030;
-  border-radius: 2px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
 }
 
 

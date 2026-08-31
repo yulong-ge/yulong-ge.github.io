@@ -10,6 +10,7 @@ design:
     show_footer: true
     show_top_note: false
   typography:
+    alignment: left
     font_size:
       body: 9.5pt
       name: 28pt
@@ -26,7 +27,7 @@ design:
     space_above: 0.35cm
     space_below: 0.2cm
   sections:
-    allow_page_break: true
+    allow_page_break: false
     space_between_regular_entries: 0.7em
   entries:
     degree_width: 1.75cm

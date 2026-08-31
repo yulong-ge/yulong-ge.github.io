@@ -15,9 +15,6 @@ cv:
       username: Yulong-Ge-3
 
   sections:
-    简历下载:
-      - bullet: "[English PDF](https://yulong-ge.github.io/assets/rendercv/rendercv_output/Yulong_Ge_CV.pdf) | [中文 PDF](https://yulong-ge.github.io/assets/rendercv/rendercv_output/Yulong_Ge_CV_ZH.pdf)"
-
     教育经历:
       - institution: 哈尔滨工业大学
         area: 应用数学

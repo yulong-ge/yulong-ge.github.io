@@ -16,9 +16,6 @@ cv:
       username: Yulong-Ge-3
 
   sections:
-    CV Downloads:
-      - bullet: "[English PDF](https://yulong-ge.github.io/assets/rendercv/rendercv_output/Yulong_Ge_CV.pdf) | [中文 PDF](https://yulong-ge.github.io/assets/rendercv/rendercv_output/Yulong_Ge_CV_ZH.pdf)"
-
     Education:
       - institution: Harbin Institute of Technology
         area: Applied Mathematics

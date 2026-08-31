@@ -118,3 +118,27 @@ ninja-keys::part(actions-list)::-webkit-scrollbar-thumb {
   border-radius: 999px;
   background-clip: padding-box;
 }
+
+.cv-download-actions {
+  display: inline-flex;
+  float: right;
+  gap: 0.5rem;
+  margin-left: 1rem;
+
+  .btn {
+    align-items: center;
+    display: inline-flex;
+    font-size: 0.8rem;
+    gap: 0.35rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cv-download-actions {
+    display: flex;
+    float: none;
+    margin: 0.75rem 0 0;
+    width: fit-content;
+  }
+}
